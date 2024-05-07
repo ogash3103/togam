@@ -3,70 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Barbershop Name]</title>
+    <title>Barbershop</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <header>
-        <h1>Welcome to [Barbershop Name]</h1>
+        <div class="logo">
+            <h2><img src="images/barbershop.jpg" alt="barbershop Platon" width="100" > <span class="logo-text">Platon</span> </h2> 
+            
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>[Brief description of your barbershop, including your mission, values, and what sets you apart.]</p>
-    </section>
-
-    <section id="services">
-        <h2>Services</h2>
-        <ul>
-            <li>Haircuts</li>
-            <li>Beard Trims</li>
-            <li>Shaves</li>
-            <li>Styling</li>
-        </ul>
-    </section>
-
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-images">
-            <!-- Add your images here -->
+    <section id="home">
+        <div class="welcome-message">
+            <h2>Welcome to Barbershop Platon!</h2>
+            <p>We're dedicated to providing top-notch grooming services to keep you looking sharp and feeling confident.</p>
+            <button onclick="bookAppointment()">Book your appointment</button>
         </div>
     </section>
-
-    <section id="barbers">
-        <h2>Meet Our Barbers</h2>
-        <div class="barber">
-            <!-- Add your barbers' information and photos here -->
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <address>
-            [Your address]<br>
-            Phone: [Your phone number]<br>
-            Email: [Your email address]
-        </address>
-        <form action="#" method="post">
-            <!-- Add a contact form here -->
-        </form>
-    </section>
-
-    <section id="location">
-        <h2>Location</h2>
-        <!-- Embed a map showing your barbershop's location -->
-    </section>
-
-    <section id="hours">
-        <h2>Hours of Operation</h2>
-        <p>[Display your opening hours for each day of the week.]</p>
-    </section>
-
     <footer>
-        <h3>Connect with Us</h3>
-        <!-- Links to your social media profiles -->
+        <p>&copy; 2024 [Your Barbershop Name]. All rights reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

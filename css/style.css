@@ -1,116 +1,62 @@
-/* Reset default styles */
-body, h1, h2, h3, p, ul, li, form, address {
-    margin: 0;
-    padding: 0;
-}
-
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f8f8f8;
 }
 
 header {
-    background-color: #333;
+    background-color: #fff;
     color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
 }
 
-header h1 {
-    font-size: 36px;
+.logo  {
+    margin: 0;
+    background-image: url("images/barbershop.jpg");
+
+}
+.logo-text{    
+    color: #333;
+}
+
+/* nav bar */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    size: bold;
+    color: #333;
 }
 
 section {
-    padding: 40px 20px;
+    padding: 50px;
+    text-align: center;
 }
 
-h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-p {
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style: none;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-.gallery-images {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.gallery-images img {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.barber {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.barber img {
-    width: 150px;
-    border-radius: 50%;
-    margin: 0 20px 20px 20px;
-}
-
-address {
-    margin-bottom: 20px;
-}
-
-form input[type="text"],
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form input[type="submit"] {
+button {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-}
-
-section#location {
-    text-align: center;
+    font-size: 16px;
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-@media screen and (min-width: 768px) {
-    body {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-
-    section {
-        padding: 40px;
-    }
+    padding: 10px 0;
 }
