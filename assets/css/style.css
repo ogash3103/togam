@@ -327,7 +327,7 @@ body {
 }
 
 .logo {
-  color: var(--indian-yellow);
+  color: #c41d1d;
   font-family: var(--ff-oswald);
   font-size: 2.5rem;
   font-weight: var(--fw-600);
@@ -469,6 +469,17 @@ body {
 /*-----------------------------------*\
   #PRICING
 \*-----------------------------------*/
+
+.pricing_size_img {
+  display: block;
+  margin: 0 auto;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .pricing::before {
   inset: 0;
